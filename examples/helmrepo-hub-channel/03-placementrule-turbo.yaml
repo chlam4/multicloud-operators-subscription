@@ -1,6 +1,8 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: nginx-pr
+  name: nginx-pr-turbo
 spec:
-  clusterReplicas: 10
+  clusterReplicas: 1
+  clusters:
+  - name: hub
